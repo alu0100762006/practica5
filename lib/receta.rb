@@ -10,18 +10,18 @@
 class Receta
     
     #getters
-    attr_reader :titulo, :ingredientes #metodos de instancia
+    attr_reader :titulo, :ingredientes, :tiempo #metodos de instancia
     #setters
-    attr_writer :titulo, :ingredientes
+    attr_writer :titulo, :ingredientes, :tiempo
     #attr_accesos :titulo -> Aqui se define tanto el get como el set
     
-    def initialize(titulo, ingredientes)
-        @titulo, @ingredientes = titulo, ingredientes #variables de instancia
+    def initialize(titulo, ingredientes, tiempo)
+        @titulo, @ingredientes, @tiempo = titulo, ingredientes, tiempo #variables de instancia
     end
     
     #metodos de instancia
     def to_s #retorna el objeto
-        "(#{@titulo}\n====\n, #{@ingredientes}\n====\n)"
+        "(#{@titulo}\n====\n, #{@ingredientes}\n====\n, #{@tiempo}\n====\n)"
     end
 end
     
