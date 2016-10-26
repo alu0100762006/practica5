@@ -9,8 +9,8 @@ class TestReceta
         porciones = 1
         tiempo = 10
         ing = %w{huevos, harina, leche}
-        #pasos = %w {unir, batir, freir}
-        @tortitas = Receta.new(titulo, porciones, tiempo, ing)
+        pasos = %w{unir, batir, freir}
+        @tortitas = Receta.new(titulo, porciones, tiempo, ing, pasos)
     end
     
     def test_simple
