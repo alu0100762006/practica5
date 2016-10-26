@@ -6,11 +6,11 @@ class TestReceta
         @tortitas = Receta.new("tortitas")
         
         titulo = "tortitas"
-        ingredientes = 3
+        porciones = 1
         tiempo = 10
-        #ing = %w {huevos, harina, leche}
+        ing = %w{huevos, harina, leche}
         #pasos = %w {unir, batir, freir}
-        @tortitas = Receta.new(titulo, ingredientes, tiempo)
+        @tortitas = Receta.new(titulo, porciones, tiempo, ing)
     end
     
     def test_simple
