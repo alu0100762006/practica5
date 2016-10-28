@@ -12,11 +12,14 @@ class TestReceta < Test::Unit::TestCase
         tiempo = "10 min"
         ing = %w{huevos, harina, leche}
         pasos = %w{unir, batir, freir}
-        @tortitas = Receta.new(titulo, porciones, tiempo, ing, pasos)
+        @Receta1 = Receta.new(titulo, porciones, tiempo, ing, pasos)
     end
     
     def test_simple
-        assert_equal("tortitas\n====\n", @tortitas.to_s)
+        #Aqui hacemos la prueba de la receta1
+        assert_equal("Titulo receta:tortitas\n====\n", @Receta1.titulo_to_s)
+        assert_equal("Porciones:1\n====\n", @Receta1.porciones_to_s)
+        assert_equal("Tiempo de preparacion:10 min")
     end
     
 end
