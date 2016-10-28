@@ -21,7 +21,7 @@ class Receta
     
     #metodos de instancia
     def titulo_to_s #retorna el objeto
-        "Titulo receta:#{@titulo}\n====\n"
+        "Titulo de la receta:#{@titulo}\n====\n"
     end
     
     def porciones_to_s
@@ -34,6 +34,10 @@ class Receta
     
     def ing_to_s
         "Ingredientes necesarios:#{@ing}\n====\n"
+    end
+    
+    def pasos_to_s
+        "Pasos necesarios:#{@pasos}\n====\n"
     end
 end
     
